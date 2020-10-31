@@ -1,5 +1,4 @@
-import import_ipynb
-import room.ipynb
+import room
 
 class Player:
     room_ID = 0
