@@ -1,4 +1,4 @@
-class Hangman:
+class hangman:
     def __init__(self) :
 
         def random_word(difficulty) :
@@ -10,7 +10,7 @@ class Hangman:
             word = word
             l = len(word)
             if l <7 : max = 8
-            if l >7 : max = 13
+            if l >=7 : max = 13
     
             for n in range(max) :
                 revealed = []
