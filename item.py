@@ -1,6 +1,11 @@
+from hangma import hangman
+import cipher
+import anagram
+import quiz
 class item :
-    def __init__(self, id) :
+    def __init__(self,id,puzzleId) :
         self.id = id
+        self.used = False
         if (self.id == 0) : self.options = []
         if self.id == 1 : self.options = []
         if self.id == 2 : self.options = []
@@ -16,37 +21,37 @@ class item :
         if self.id == 12 : self.options = []
         if self.id == 13 : self.options = []
       
-    def glow() :
-        if (self.used != false) :
+    def glow(self) :
+        if (self.used == False) :
             print("you see a .....................") 
-            show_options(self.options)
+            self.show_options(self.options)
 
-    def show_puzzle() :
+    def show_puzzle(self,puzzleId,hangman,cypher,anagram,quiz) :
         if puzzleId == 1 : 
-            hangman.run(word)
+            hangman.run(hangman.random_word())
         if puzzleId == 2 : 
-            cypher.run(word)
+            cipher.run(cipher.run.random_word())
         if puzzleId == 3 : 
-            anagram.run(word)
+            anagram.run(anagram.run.random_word())
         if puzzleId == 4 : 
-            quiz.run(word)
-    def open() :
+            quiz.run(quiz.run.random_word())
+    def open(self) :
         pass
-    def read() :
+    def read(self) :
         pass
-    def inspect() :
+    def inspect(self) :
         pass
-    def eat() :
+    def eat(self) :
         pass
-    def drink() :
+    def drink(self) :
         pass
-    def smoke() :
+    def smoke(self) :
         pass
-    def ignore() :
+    def ignore(self) :
         pass
     def show_options(self,listOfOptions):
             print("press: ")
             for option in listOfOptions :
                 print("a. {0}".format(option))
     
-    
+
