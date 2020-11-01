@@ -1,10 +1,10 @@
-import hangman
+import hangman 
 import Cipher
-import anagram
-import quiz
+import quiz 
+
 class item :
     def __init__(self,id,puzzleId) :
-        
+
         self.id = id
         self.used = False
         if (self.id == 0) : self.options = []
