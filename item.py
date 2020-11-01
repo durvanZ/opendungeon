@@ -1,5 +1,5 @@
-from hangma import hangman
-import cipher
+import hangman
+import Cipher
 import anagram
 import quiz
 class item :
