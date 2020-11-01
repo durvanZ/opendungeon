@@ -1,4 +1,4 @@
-import room
+import room as room
 
 class Player:
     room_ID = 0
@@ -26,4 +26,4 @@ class Player:
     def set_health(self, health):
         self.health = health
 
-    currentroom = room(room_ID)
+    currentroom = room
