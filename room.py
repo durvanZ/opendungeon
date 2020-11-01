@@ -19,12 +19,12 @@ class room:
         if id == 12 : items = []
         if id == 13 : items = []
 
-    def open(self):                #will run when player enters the room using room.get(id).open() method
-        room_graphics()        #will run graphics method
-        room_ambience(roomId)        #will run ambience method
-        print("you have entered room {0}".format(id))        
-        room.narrator(roomId)             #runs the story engine
-        room.show_options(roomId)         #shows options of where to go
+    def open(self,allRooms):                #will run when player enters the room using room.get(id).open() method
+        allRooms[self.roomId].room_graphics(self.roomId)        #will run graphics method
+        allRooms[self.roomId].room_ambience(self.roomId)        #will run ambience method
+        print("you have entered room {0}".format(self.roomId))        
+        allRooms[self.roomId].room_narrator(self.roomId)             #runs the story engine
+        allRooms[self.roomId].room_options(self.roomId)         #shows options of where to go
     
     def set_possible_rooms(self, rooms) :
         self.possibleRooms = []
@@ -33,22 +33,22 @@ class room:
         self.possibleRooms.append(room)
 
     def rem_possible_rooms(self, room) :
-        self.possibleRooms.remover(room)
+        self.possibleRooms.remove(room)
 
     def show_options(self, listOfOptions):
         print("press: ")
         for option in listOfOptions :
             print("a. {0}".format(option))
     
-    def exit(self):
+    def exit(self,allRooms):
         if () :
-            move_to(14)
+            allRooms[self.roomId].move_to(14)
 
-    def move_to(self, id):
-        close(self.id)
+    def move_to(self, allRooms):
+        allRooms[self.roomId].close(self.roomId)
         open(id)
 
-    def narrator(self):
+    def narrator(self,items):
         if () :
             items[0].glow()
        
