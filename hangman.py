@@ -8,21 +8,24 @@ class hangman:
         if difficulty == "hard" :print ()
 
     def run(self, word) :
-            word = word
+        word = word
         l = len(word)
         if l <7 : max = 8
         if l >=7 : max = 13
         revealed = []
         displayed = []
         for i in word :
-            displayed.add("_ ")
+            displayed.append("_ ")
         for n in range(max) :
             for character in word : 
                 for i in revealed :
                     if character==word[i] :
                         displayed[i] = character
                         break
-            print(displayed.asString())
+            string = ""
+            for x in displayed:
+                string = string + x
+            print(string)
             user_input = input("Enter your guess")
             counter = 0
             correct = False

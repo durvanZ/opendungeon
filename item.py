@@ -4,6 +4,7 @@ import anagram
 import quiz
 class item :
     def __init__(self,id,puzzleId) :
+        
         self.id = id
         self.used = False
         if (self.id == 0) : self.options = []
@@ -26,14 +27,12 @@ class item :
             print("you see a .....................") 
             self.show_options(self.options)
 
-    def show_puzzle(self,puzzleId,hangman,Cipher,anagram,quiz) :
+    def show_puzzle() :
         if puzzleId == 1 : 
             hangman.run(hangman.random_word())
         if puzzleId == 2 : 
             Cipher.run(Cipher.run.random_word())
         if puzzleId == 3 : 
-            anagram.run(anagram.run.random_word())
-        if puzzleId == 4 : 
             quiz.run(quiz.run.random_word())
     def open(self) :
         pass
