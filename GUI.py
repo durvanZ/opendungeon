@@ -26,13 +26,13 @@ class App(tk.Frame):
 
         # text box for the read only favour text
         text_box = Text(text_frame, bg="black", fg="lime")
-        text_box.grid(columnspan=10,row=0, column=0, sticky="w")
+        text_box.grid(columnspan=10,row=0, column=1, sticky="w")
         text_box.config(state=DISABLED)
         self.text_box = text_box
 
-        # text box for the read only favour text
+        # text box for the read only inventory
         inventory = tk.Text(text_frame, bg="black", fg="lime")
-        inventory.grid(row=0, column=1, sticky="e")
+        inventory.grid(row=0, column=0, sticky="e")
         inventory.config(state=DISABLED)
         self.inventory = inventory
 
@@ -50,6 +50,13 @@ class App(tk.Frame):
         self.text_box.insert(tk.END, text + "\n")
         self.text_box.see("end")
         self.text_box.config(state=DISABLED)
+
+    # Function to add text to the read only text box
+    def add_to_inventory(self, text):
+        self.inventory.config(state=NORMAL)
+        self.inventory.insert(tk.END, text + "\n")
+        self.inventory.see("end")
+        self.inventory.config(state=DISABLED)
 
     # Function to read and delete the user input
     def user_input(self, param):
