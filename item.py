@@ -30,7 +30,7 @@ class item :
         if puzzleId == 1 : 
             hangman.run(hangman.random_word())
         if puzzleId == 2 : 
-            Cipher.run(Cipher.run.random_word())
+            Cipher.run()
         if puzzleId == 3 : 
             anagram.run(anagram.run.random_word())
         if puzzleId == 4 : 
