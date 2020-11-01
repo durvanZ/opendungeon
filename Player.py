@@ -1,7 +1,9 @@
 from room import room as room
 
 class Player:
-    room_ID = 0
+    room_ID = 0         #Room ID
+
+    #Constructor. Includes player name, age, health, carried items and the current room
     def __init__(self, name, age, health, items, currentRoom):
         self.name = name
         self.age = age
@@ -9,6 +11,7 @@ class Player:
         self.items = []
         self.currentRoom = 0
 
+    #Getters and Setters for each field
     def get_name(self):
         return self.name
 
