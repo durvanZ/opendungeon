@@ -1,4 +1,4 @@
-import room as room
+from room import room as room
 
 class Player:
     room_ID = 0
