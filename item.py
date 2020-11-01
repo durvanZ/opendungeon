@@ -4,8 +4,8 @@ import quiz
 
 class item :
     def __init__(self,id,puzzleId) :
-
         self.id = id
+        self.puzzleId = puzzleId
         self.used = False
         if (self.id == 0) : self.options = []
         if self.id == 1 : self.options = []
@@ -27,7 +27,7 @@ class item :
             print("you see a .....................") 
             self.show_options(self.options)
 
-    def show_puzzle() :
+    def show_puzzle(self,hangman,Cipher,quiz,puzzleId) :
         if puzzleId == 1 : 
             hangman.run(hangman.random_word())
         if puzzleId == 2 : 

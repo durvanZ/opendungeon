@@ -1,2 +1,5 @@
 class quiz:
-    
+    Questions = []
+    Questions.append("Which room would be the safest? Room A has a serial killer. Room B has a lion that hasn’t eaten in 6 years. Room C has a raging fire")
+    Questions.append("You’re in an isolated mansion on Tombstone Hill along with the Witch, Pennywise, the Vampire, Jack the riper, and the Devil. On a heavily rainy stormy night of Halloween, electricity got cut off so everything became even darker. You’re calmly minding your own business in your room but freezing almost to death. Suddenly, you heard a scream: “The Vampire is dead!”. You and all the others have to stop all the activities and gather for a meeting, figuring out who is the culprit. As you ask each of them what they did during the time the Vampire got murdered, Pennywise provides his alibi, “I was in the kitchen making dinner from the kid I just kidnapped!” Jack the Riper continues, “I was taking the shower. You can ask the Witch she heard me!” The Witch then confirms, “He was so loud that I couldn’t watch my favorite show!” Lastly, the Devil said, “I was sleeping in the room next to Vampire’s and got woke up by the loud scream.”           Who is the murderer?")
+    Questions.append("")
