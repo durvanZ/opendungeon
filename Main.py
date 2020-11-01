@@ -2,6 +2,9 @@ import time
 from Player import Player
 from room import room
 from item import item
+import hangman
+import Cipher
+import quiz
 
 print("==========Welcome to Open Dungeon!==========")
 
