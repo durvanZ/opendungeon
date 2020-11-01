@@ -1,5 +1,6 @@
 import random
 
+
 class Cipher:
     def __init__(self):
         pass
