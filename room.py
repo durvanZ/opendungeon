@@ -19,46 +19,45 @@ class room:
         if id == 12 : items = []
         if id == 13 : items = []
 
-        def open():                #will run when player enters the room using room.get(id).open() method
-            room_graphics()        #will run graphics method
-            room_ambience(roomId)        #will run ambience method
-            print("you have entered room {0}".format(id))        
-            room.narrator(roomId)             #runs the story engine
-            room.show_options(roomId)         #shows options of where to go
+    def open(self):                #will run when player enters the room using room.get(id).open() method
+        room_graphics()        #will run graphics method
+        room_ambience(roomId)        #will run ambience method
+        print("you have entered room {0}".format(id))        
+        room.narrator(roomId)             #runs the story engine
+        room.show_options(roomId)         #shows options of where to go
     
-        def set_possible_rooms(rooms) :
-            self.possibleRooms = []
+    def set_possible_rooms(self, rooms) :
+        self.possibleRooms = []
     
-        def add_possible_rooms(room) :
-            self.possibleRooms.append(room)
+    def add_possible_rooms(self, room) :
+        self.possibleRooms.append(room)
 
-        def rem_possible_rooms(room) :
-            self.possibleRooms.remover(room)
+    def rem_possible_rooms(self, room) :
+        self.possibleRooms.remover(room)
 
-        def show_options(listOfOptions):
-            print("press: ")
-            for option in listOfOptions :
-                print("a. {0}".format(option))
+    def show_options(self, listOfOptions):
+        print("press: ")
+        for option in listOfOptions :
+            print("a. {0}".format(option))
     
-        def exit():
-            if () :
-                move_to(14)
+    def exit(self):
+        if () :
+            move_to(14)
 
-        def move_to(id):
-            close(self.id)
-            open(id)
+    def move_to(self, id):
+        close(self.id)
+        open(id)
 
-        def narrator():
-            if () :
-                items[0].glow()
+    def narrator(self):
+        if () :
+            items[0].glow()
        
-        def room_ambience():
-            print()
+    def room_ambience(self):
+        print()
 
-        def room_graphics():
-            print()
-            return
+    def room_graphics(self):
+        print()
+        return
 
-        def close():
-            print()
-
+    def close(self):
+        print()
