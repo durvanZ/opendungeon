@@ -1,5 +1,5 @@
-from hangma import hangman
-import cipher
+import hangman
+import Cipher
 import anagram
 import quiz
 class item :
@@ -26,11 +26,11 @@ class item :
             print("you see a .....................") 
             self.show_options(self.options)
 
-    def show_puzzle(self,puzzleId,hangman,cypher,anagram,quiz) :
+    def show_puzzle(self,puzzleId,hangman,Cipher,anagram,quiz) :
         if puzzleId == 1 : 
             hangman.run(hangman.random_word())
         if puzzleId == 2 : 
-            cipher.run(cipher.run.random_word())
+            Cipher.run(Cipher.run.random_word())
         if puzzleId == 3 : 
             anagram.run(anagram.run.random_word())
         if puzzleId == 4 : 
