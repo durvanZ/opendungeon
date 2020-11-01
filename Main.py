@@ -19,9 +19,8 @@ print(string1 + string2)
 
 current_room = []
 for i in range(13):
-    current_room[room(i)]
+    current_room = current_room.append(object.__new__(room))
 
-current_room = input(string3)
 print(f"Room {my_player.get_current_room}")
 
 current_room[my_player.get_current_room()].Open()
